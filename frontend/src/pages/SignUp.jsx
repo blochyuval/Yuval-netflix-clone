@@ -12,7 +12,7 @@ function SignUp() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const { signUp } = useAuthStore()
+  const { signUp, isSigningUp } = useAuthStore()
   
 
 
@@ -76,8 +76,10 @@ function SignUp() {
               />
           </div>
 
-          <button className='w-full py-2 bg-red-600 text-white font-semibold hover:bg-red-700'>
-            Sign Up
+          <button className='w-full py-2 bg-red-600 text-white font-semibold hover:bg-red-700'
+          disabled={isSigningUp}
+          >
+            {isSigningUp ? 'Loading...' : 'Sign Up'}
           </button>
           
         </form>

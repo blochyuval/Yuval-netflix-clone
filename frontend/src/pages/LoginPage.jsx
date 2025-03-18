@@ -7,7 +7,7 @@ function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const { login, isLogging } = useAuthStore();
+  const { login, isLogin } = useAuthStore();
 
 
   const handleLogin = (e) => {
@@ -57,8 +57,10 @@ function LoginPage() {
               />
           </div>
 
-          <button className='w-full py-2 bg-red-600 text-white font-semibold hover:bg-red-700'>
-            Login
+          <button className='w-full py-2 bg-red-600 text-white font-semibold hover:bg-red-700'
+          disabled={isLogin}
+          >
+            {isLogin ? 'Loading...' : 'Login' }
           </button>
           
         </form>

@@ -33,7 +33,7 @@ export const useAuthStore = create((set) => ({
     }
   },
   logout: async() => {
-    set({ isLogingOut: true});
+    set({ isLogingOut: true });
     try {
       const response = await axios.post('api/v1/auth/logout');
       set({user: null, isLogingOut: false})
