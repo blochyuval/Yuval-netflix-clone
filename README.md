@@ -43,6 +43,7 @@ TMDB_API_KEY=
 From the root folder:
 
 npm run build
+
 npm run start (for production)
 
 ## 🙏 Acknowledgments
