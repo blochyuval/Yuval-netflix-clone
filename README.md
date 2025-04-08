@@ -8,9 +8,13 @@ A movie-streaming platform inspired by Netflix. Users can search for movies and 
 ## 🚀 Features
 
 🔍 Search Functionality – Instantly find movies, TV shows, and people in the film industry.
+
 🎞️ Movie Detail Pages – Dedicated pages for each movie with trailers, release dates, genres, and more.
+
 ▶️ Trailer Integration – Seamlessly embedded video trailers using react-player.
+
 ⚡ Fast & Responsive – Fully responsive UI with smooth animations and loading states.
+
 📊 Live UI Feedback – Includes skeleton screens, background transitions, and toast notifications for an interactive experience.
 
 ## 🧑‍💻 Tech Stack
